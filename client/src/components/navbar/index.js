@@ -1,4 +1,8 @@
 import React, { Component } from "react";
+import {
+    BrowserRouter as Router,
+	Link
+} from 'react-router-dom';
 import "./style.css"
 
 class Nav extends Component {
@@ -7,12 +11,14 @@ class Nav extends Component {
             <div>
                 <nav>
                     <div className="nav-wrapper">
-                        <a href="#" className="brand-logo">Logo</a>
-                        <ul id="nav-mobile" className="right hide-on-med-and-down">
-                            <li><a href="sass.html">Sass</a></li>
-                            <li><a href="badges.html">Components</a></li>
-                            <li><a href="collapsible.html">JavaScript</a></li>
-                        </ul>
+                        <Router>
+                        <Link to="/" className="brand-logo">Logo</Link>
+                            <ul id="nav-mobile" className="right hide-on-med-and-down">
+                                <li><Link to="sass.html">Sass</Link></li>
+                                <li><Link to="badges.html">Components</Link></li>
+                                <li><Link to="collapsible.html">JavaScript</Link></li>
+                            </ul>
+                        </Router>
                     </div>
                 </nav>
             </div>

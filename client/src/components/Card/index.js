@@ -5,8 +5,8 @@ function Card(props) {
         return (
                 <div className="container">
                     <div class="card-panel white">
-                        <h3>{props.chidren}</h3>
-                        <h4>{props.chidren}</h4>
+                        <h3>{props.children}</h3>
+                        <h4>{props.children}</h4>
                         <img 
                              
                         />

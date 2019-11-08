@@ -6,8 +6,9 @@ class Results extends Component {
         return (
             <div>
                 <div className="container">
-                    <div class="card-panel teal">
+                    <div className="card-panel teal">
                         <h3>Results</h3>
+                        
                     </div>
                 </div>
             </div>
