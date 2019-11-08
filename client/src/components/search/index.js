@@ -22,8 +22,14 @@ class Search extends Component {
                 <div className="container">
                     <div className="card-panel teal">
                         <h3>Search Here</h3>
-                        <input type="text" onChange={this.props.handleSearch}/>
-                        <button className="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <input
+                            type="text"
+                            onChange={this.props.handleInputChange}
+                            placeholder="Search"
+                            value={this.props.value}
+                            name="search"
+                        />
+                        <button className="btn waves-effect waves-light" type="submit" name="action" onClick={this.props.handleFormSubmit}>Submit
                             <i className="material-icons right">send</i>
                         </button>
                     </div>
